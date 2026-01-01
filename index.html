@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO Meta Tags -->
     <title>Coloron Yarns | Premium Sewing Threads & Spun Yarns Manufacturer</title>
@@ -50,181 +50,26 @@
         "@type": "ContactPoint",
         "telephone": "+91-8239855000",
         "contactType": "Customer Service"
-      },
-      "sameAs": [],
-      "product": [
-        {
-          "@type": "Product",
-          "name": "Reverse Twist Sewing Thread",
-          "description": "High-performance Reverse Twist sewing threads suitable for industrial use. Available in Perforated dye cones and Paper cones.",
-          "additionalProperty": [
-            { "@type": "PropertyValue", "name": "Ply Options", "value": "2, 3, 4, 5 " },
-            { "@type": "PropertyValue", "name": "Count Range", "value": "10s – 60s" },
-            { "@type": "PropertyValue", "name": "Fibres", "value": "SHT Polyester, Reliance SHT Polyester, Semi-dull Polyester, Recycled Polyester, Optical Polyester, Viscose, Viscose–Polyester blends" }
-          ]
-        },
-        {
-          "@type": "Product",
-          "name": "Standard Twist Double Yarn",
-          "description": "Versatile Standard Twist yarn for industrial applications.",
-          "additionalProperty": [
-            { "@type": "PropertyValue", "name": "Ply Options", "value": "2, 3, 4, 5" },
-            { "@type": "PropertyValue", "name": "Count Range", "value": "15s – 40s" },
-            { "@type": "PropertyValue", "name": "Fibres", "value": "Semi-dull (Virgin) Polyester, Recycled Polyester, Viscose" }
-          ]
-        },
-        {
-          "@type": "Product",
-          "name": "Polyester Single Yarn",
-          "description": "Industrial grade polyester single yarn available in multiple finishes.",
-          "additionalProperty": [
-            { "@type": "PropertyValue", "name": "Count Range", "value": "15s – 40s" },
-            { "@type": "PropertyValue", "name": "Fibres", "value": "Semi-dull (Virgin) Polyester, Viscose Polyester, Optical, Recycled Polyester" }
-          ]
-        },
-        {
-          "@type": "Product",
-          "name": "ELI Twist Yarn",
-          "description": "ELI Twist yarn is a high-performance yarn suitable for industrial applications.",
-          "additionalProperty": [
-            { "@type": "PropertyValue", "name": "Count Range", "value": "2-20s, 2-30s, 2-40s, 2-50s, 2-60s" },
-            { "@type": "PropertyValue", "name": "Fibres", "value": "Polyester, Viscose, Viscose-Polyester blend" }
-          ]
-        }
-      ]
+      }
     }
     </script>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <!-- Fonts: Preconnect + Display Swap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Canela:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet" />
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-
-    <!-- Configuration -->
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#2F4F4F",
-                        "primary-dark": "#1a3333",
-                        "secondary": "#A0522D",
-                        "secondary-light": "#CD853F",
-                        "text-light": "#FDFBF7",
-                        "text-dark": "#1C1C1C",
-                        "bg-dark": "#121212",
-                        "bg-medium": "#2D2D2D",
-                        "warm-grey": "#EBE8E1",
-                        "accent-indigo": "#2c3e50",
-                    },
-                    fontFamily: {
-                        "display": ["Canela", "serif"],
-                        "body": ["Inter", "sans-serif"],
-                    },
-                    animation: {
-                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
-                        'spin-slow': 'spin 3s linear infinite',
-                    },
-                    keyframes: {
-                        fadeInUp: {
-                            '0%': { opacity: '0', transform: 'translateY(30px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        }
-                    }
-                },
-            },
-        }
-    </script>
-
-    <style type="text/tailwindcss">
-        /* Custom Styles & Utilities */
-        @layer utilities {
-            .text-outline {
-                -webkit-text-stroke: 1px rgba(255,255,255,0.2);
-                color: transparent;
-            }
-        }
-
-        body {
-            @apply bg-bg-dark text-text-light;
-        }
-
-        /* Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #121212;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #444;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #A0522D;
-        }
-
-        /* Reveal on Scroll Class */
-        .reveal-on-scroll {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .reveal-on-scroll.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Toast Notification */
-        .toast {
-            visibility: hidden;
-            min-width: 250px;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            border-radius: 4px;
-            padding: 16px;
-            position: fixed;
-            z-index: 100;
-            right: 30px;
-            bottom: 30px;
-            font-size: 14px;
-            border-left: 4px solid #A0522D;
-            transform: translateY(20px);
-            opacity: 0;
-            transition: all 0.3s ease-in-out;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        }
-        .toast.show {
-            visibility: visible;
-            transform: translateY(0);
-            opacity: 1;
-        }
-
-        /* Navigation Link Hover Effect */
-        .nav-link::after {
-            content: '';
-            display: block;
-            width: 0;
-            height: 1px;
-            background: currentColor;
-            transition: width .3s;
-        }
-        .nav-link:hover::after {
-            width: 100%;
-        }
-    </style>
+    <!-- Tailwind + Custom CSS -->
+    <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 
-<body class="font-body selection:bg-secondary selection:text-white antialiased overflow-x-hidden">
+
+<body
+    class="bg-bg-dark text-text-light font-body selection:bg-secondary selection:text-white antialiased overflow-x-hidden">
 
     <!-- Toast Notification -->
     <div id="toast" class="toast">
@@ -294,8 +139,7 @@
     <section class="relative w-full h-screen min-h-[700px] flex items-center justify-center overflow-hidden" id="home">
         <div class="absolute inset-0 z-0">
             <div class="absolute inset-0 bg-black/50 z-10"></div>
-            <div class="w-full h-full bg-cover bg-center scale-110 animate-[parallaxMove_20s_ease-in-out_infinite_alternate]"
-                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCsurMI08isabRG4BvtgEwM47MmipdqNxoFEfM8ICmFOvwu7IiLSrMi1piwX2kjmaTDK0XXGZlIPeT_oj_x2PEHPZHd7FW7JnOcapp2gJwcew1NfVLEe1g--tljg0eIXSdc_nHE63S02ogr89xp6KKw5u-Ai4FFpbhMzL36ToZtVpa5Vp7EpDZlHcJqp5DUj05_ZtZIXUzPlBhjoB3HVU4jcufO905f-9MQ4py7kNROb1fnNXDTiOusSGnJXSmwvRYb8yZ6sBYSMys'); 
+            <div class="w-full h-full bg-cover bg-center scale-110 animate-parallax-move" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCsurMI08isabRG4BvtgEwM47MmipdqNxoFEfM8ICmFOvwu7IiLSrMi1piwX2kjmaTDK0XXGZlIPeT_oj_x2PEHPZHd7FW7JnOcapp2gJwcew1NfVLEe1g--tljg0eIXSdc_nHE63S02ogr89xp6KKw5u-Ai4FFpbhMzL36ToZtVpa5Vp7EpDZlHcJqp5DUj05_ZtZIXUzPlBhjoB3HVU4jcufO905f-9MQ4py7kNROb1fnNXDTiOusSGnJXSmwvRYb8yZ6sBYSMys'); 
                  filter: brightness(0.7) contrast(1.1);">
             </div>
         </div>
@@ -335,7 +179,7 @@
     <!-- Expertise Section -->
     <section class="relative w-full py-32 lg:py-40 bg-warm-grey text-bg-dark overflow-hidden" id="expertise">
         <div class="absolute inset-0 opacity-10 pointer-events-none"
-            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAsa0DK0tCxUf2NSgjpiAdESI_-eFQLhysIKw1fOPQmtEgLIZokJug2a39lsRlA5f1JSbacKGQuGv34S4WLiW8bfLeMRf3VW-ZL5xv6WDsPbLsHqmumX-BCPLy0Fxm3jgEB-tWV4GnFaA-csRFSS8EXCJQ-sCYuIXWBapEeHkAKV_rPavuSlBCJY6pzlNn4_LfPl-Izm58tDZwEhRClu_7TmZ4qjHw7DTur0OuDLu4imGEOQMQKegAFYqjsaWFQyOEnmq1tt14tVSg');">
+            style="background-image: url('/assets/expertise-bg.png');">
         </div>
         <div class="relative z-10 max-w-[1200px] mx-auto px-6 lg:px-12">
             <div class="grid lg:grid-cols-12 gap-16 lg:gap-24 items-start">
@@ -373,7 +217,7 @@
                     </div>
                     <div class="reveal-on-scroll w-full h-64 mt-12 overflow-hidden relative group rounded-lg shadow-lg">
                         <div class="absolute inset-0 bg-cover bg-center transition-transform duration-[2s] ease-out group-hover:scale-110 grayscale hover:grayscale-0"
-                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDL4DDwkla_9M1A_j7klb1gKTK5V-_tYpaL0_17ZMwPPNvJWZbASA8FU4kmT2sYwFg2PfqCsuGSk2OK4cf1Uhu9bRwHuqDhCmx0F_97lCT5MJdgFG53iDGhySfHDeRqbo4C0d6_pbiLSdllSPFP3jXWQAvY3ZRloNfS1LfuuhSYLXQqVJ6uxHDWJVJXcBJLHMdZTlPvEt0m0C2DIO9SnEIY9vdDu_80EaoOPUNGRVXjC9ZrosudvUalI_iTQFKSx2YfbgO0Z1STk-M');">
+                            style="background-image: url('/assets/foundation-img.png');">
                         </div>
                     </div>
                 </div>
@@ -405,8 +249,8 @@
             <div class="flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row gap-8">
 
                 <!-- Product 1: Sewing Threads (Reverse Twist) -->
-                <div class="reveal-on-scroll group cursor-pointer relative h-[600px] overflow-hidden bg-bg-dark border border-white/5 transition-all duration-500 lg:flex-1 lg:hover:flex-[1.8] hover:border-white/20 lg:hover:z-10"
-                    onclick="">
+                <div
+                    class="reveal-on-scroll group cursor-pointer relative h-[600px] overflow-hidden bg-bg-dark border border-white/5 transition-all duration-500 lg:flex-1 lg:hover:flex-[1.8] hover:border-white/20 lg:hover:z-10">
                     <div class="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-110">
                         <div class="w-full h-full bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-700"
                             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAgqlYOwHBiczgyP_7Oq315V4FlXKJfEokXZ_x26o_TIl2c92O6gA_r7S_zTl1wXMiOBP1SvqEHUE-1JNzjl_dlicvAQXzXeOu6zLeih9rFCqrI4XOHV4cTZBOnRNaJ1dLHamtUS-bLI9eMifvAosFhtYR9uF1bEeLUyZJX4k0x4bUdleQVvaeQlOrfzFLuFMnWs1aCl1fXfr7g19_vT5hooPsx48zvDVELJCAiBp1KJI-qebwbZGDv8dgJ3KB1VSYO-2gNwYX4o9c'); filter: brightness(0.8);">
@@ -465,8 +309,8 @@
                 </div>
 
                 <!-- Product 2: Spun & Industrial Yarns (Standard Twist) -->
-                <div class="reveal-on-scroll group cursor-pointer relative h-[600px] overflow-hidden bg-bg-dark border border-white/5 transition-all duration-500 lg:flex-1 lg:hover:flex-[1.8] hover:border-white/20 lg:hover:z-10"
-                    onclick="">
+                <div
+                    class="reveal-on-scroll group cursor-pointer relative h-[600px] overflow-hidden bg-bg-dark border border-white/5 transition-all duration-500 lg:flex-1 lg:hover:flex-[1.8] hover:border-white/20 lg:hover:z-10">
                     <div class="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-110">
                         <div class="w-full h-full bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-700"
                             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB1FiHW_Obs4TKYaX4Hr1M4KdYggw1ia9enHz4FmP3Kbro52bTxOnK_bBIIOAJKO37h89ROpFdp3aAGvsIWIq2tjQ1nUpW-O2EmMafJYHnuBNCL_psWs971i-Tu0TxVgr7wMs2dmZqgPyyR_zab_cx6RmbgKD4KR_MblPsEBblqzYbBZJjqI0NcMr3NnPVA5p4OS7PiTkDiI7OGiG3z2iRYSE0zO_QdLeFOlkD1JFpuv8SXR-KzxhYk-2gywcf4TNmXhj-5C_WydG8'); filter: brightness(0.8);">
@@ -513,8 +357,8 @@
                 </div>
 
                 <!-- Product 3: Spun & Industrial Yarns (Polyester Single) -->
-                <div class="reveal-on-scroll group cursor-pointer relative h-[600px] overflow-hidden bg-bg-dark border border-white/5 transition-all duration-500 lg:flex-1 lg:hover:flex-[1.8] hover:border-white/20 lg:hover:z-10"
-                    onclick="">
+                <div
+                    class="reveal-on-scroll group cursor-pointer relative h-[600px] overflow-hidden bg-bg-dark border border-white/5 transition-all duration-500 lg:flex-1 lg:hover:flex-[1.8] hover:border-white/20 lg:hover:z-10">
                     <div class="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-110">
                         <div class="w-full h-full bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-700"
                             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBuA8rtkJHe5P2F3SQy2QA7z8ZJhIQ_tf6zlvfPDx1yt9i0FYfnsKWMR7KQXmGYCMkWR4WnobfWELBJ1f_kKJ5ujR7Hp3AQBWQOJB9khpAZ6AFUWHsEpXb5_rH6tKEX_g8SoC47jGTuWwVJrK3V6gy4PDo0sL9sQ1SfTyO0aM4xQDEShW-iQt819JNqG9PX92eATbAEummC8pg9gwngUlRbxmOvkZe7lqQki_Itq5qA-z-d7DC35QOINQxLOA_C2XCOplOyY6hO_vQ'); filter: brightness(0.8);">
@@ -556,8 +400,8 @@
                 </div>
 
                 <!-- Product 4: ELI Twist Yarn -->
-                <div class="reveal-on-scroll group cursor-pointer relative h-[600px] overflow-hidden bg-bg-dark border border-white/5 transition-all duration-500 lg:flex-1 lg:hover:flex-[1.8] hover:border-white/20 lg:hover:z-10"
-                    onclick="">
+                <div
+                    class="reveal-on-scroll group cursor-pointer relative h-[600px] overflow-hidden bg-bg-dark border border-white/5 transition-all duration-500 lg:flex-1 lg:hover:flex-[1.8] hover:border-white/20 lg:hover:z-10">
                     <div class="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-110">
                         <div class="w-full h-full bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-700"
                             style="background-image: url('/assets/eli_twist_yarn.jpg'); filter: brightness(0.8);">
@@ -739,7 +583,7 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0.5 bg-white/10 border border-white/10">
                 <!-- Item 1 -->
-                <div class="group cursor-pointer relative aspect-[3/4] overflow-hidden bg-bg-dark" onclick="">
+                <div class="group cursor-pointer relative aspect-[3/4] overflow-hidden bg-bg-dark">
                     <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110 opacity-60 group-hover:opacity-80"
                         style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDdzjGsW0YjF618UxeON4Ll7icen2ttBF_deTNiLOC7Q9SOClA1BA6DpSsMmX6Hs9vouXNzjMVGQnO0mOo2CkAjmB20CJ4h7yRsNW1TUJcST7Evp6vcCSzniPOWgHdcYlALlGP0xZS3nvYjDqgsPYPsgffFYt7LiJmkjLkQE4EXjDWZ9uc-VpWVsWcRo4Jxe8wXle1A7MH_bc5deHapoc40nVJZXktkcJ-JKYjZknhcBVxvdLGG4prsnz57BsMK9e1C-lf75of4upU');">
                     </div>
@@ -756,7 +600,7 @@
                     </div>
                 </div>
                 <!-- Item 2 -->
-                <div class="group cursor-pointer relative aspect-[3/4] overflow-hidden bg-bg-dark" onclick="">
+                <div class="group cursor-pointer relative aspect-[3/4] overflow-hidden bg-bg-dark">
                     <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110 opacity-60 group-hover:opacity-80"
                         style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZGwHIR5ZMQBRQmNW2d7ot8oeTTjxgRXjf7ktZHZRnvkBy7ZsXgyycGIe0berFGNRO9iPjtX3nt1-kghPVdW1BX0Yi4BD_Kr5zXEDg05vK1mxyAuSf8b4upMhrihD7CjtneyxMvUR_-qz7Mxx9VF3Sn3AhpoAMcW4hkA1WvqYZKS1mfyqxzT1QhDt9G2uwSgQQhS5WvlT3YvXMerZq6YyEO4wA995yWRo_c1sVEKVcTKt4sD1B5NYdz4fCXtTvRb2Nxu4xGqFNcQc');">
                     </div>
@@ -773,7 +617,7 @@
                     </div>
                 </div>
                 <!-- Item 3 -->
-                <div class="group cursor-pointer relative aspect-[3/4] overflow-hidden bg-bg-dark" onclick="">
+                <div class="group cursor-pointer relative aspect-[3/4] overflow-hidden bg-bg-dark">
                     <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110 opacity-60 group-hover:opacity-80"
                         style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDL4DDwkla_9M1A_j7klb1gKTK5V-_tYpaL0_17ZMwPPNvJWZbASA8FU4kmT2sYwFg2PfqCsuGSk2OK4cf1Uhu9bRwHuqDhCmx0F_97lCT5MJdgFG53iDGhySfHDeRqbo4C0d6_pbiLSdllSPFP3jXWQAvY3ZRloNfS1LfuuhSYLXQqVJ6uxHDWJVJXcBJLHMdZTlPvEt0m0C2DIO9SnEIY9vdDu_80EaoOPUNGRVXjC9ZrosudvUalI_iTQFKSx2YfbgO0Z1STk-M');">
                     </div>
@@ -790,7 +634,7 @@
                     </div>
                 </div>
                 <!-- Item 4 -->
-                <div class="group cursor-pointer relative aspect-[3/4] overflow-hidden bg-bg-dark" onclick="">
+                <div class="group cursor-pointer relative aspect-[3/4] overflow-hidden bg-bg-dark">
                     <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110 opacity-60 group-hover:opacity-80"
                         style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCsurMI08isabRG4BvtgEwM47MmipdqNxoFEfM8ICmFOvwu7IiLSrMi1piwX2kjmaTDK0XXGZlIPeT_oj_x2PEHPZHd7FW7JnOcapp2gJwcew1NfVLEe1g--tljg0eIXSdc_nHE63S02ogr89xp6KKw5u-Ai4FFpbhMzL36ToZtVpa5Vp7EpDZlHcJqp5DUj05_ZtZIXUzPlBhjoB3HVU4jcufO905f-9MQ4py7kNROb1fnNXDTiOusSGnJXSmwvRYb8yZ6sBYSMys');">
                     </div>
@@ -963,7 +807,49 @@
             });
 
 
-            // 3. Header Background Change on Scroll
+            // 3. Info Card Toggle for Mobile (Products & Applications)
+            const infoCards = document.querySelectorAll('.group.cursor-pointer');
+
+            infoCards.forEach(card => {
+                const revealContent = card.querySelector('.reveal-content');
+                if (!revealContent) return; // Skip if no reveal content
+
+                card.addEventListener('click', (e) => {
+                    e.stopPropagation();
+
+                    // Check if this card is currently open by checking if it has the closed classes
+                    const isClosed = revealContent.classList.contains('translate-y-[120%]');
+
+                    // Close all cards by adding back the closed classes
+                    infoCards.forEach(c => {
+                        const content = c.querySelector('.reveal-content');
+                        if (content) {
+                            content.classList.add('translate-y-[120%]', 'opacity-0');
+                            content.classList.remove('translate-y-0', 'opacity-100');
+                        }
+                    });
+
+                    // If this card was closed, open it
+                    if (isClosed) {
+                        revealContent.classList.remove('translate-y-[120%]', 'opacity-0');
+                        revealContent.classList.add('translate-y-0', 'opacity-100');
+                    }
+                });
+            });
+
+            // Close all cards when clicking outside
+            window.addEventListener('click', () => {
+                infoCards.forEach(card => {
+                    const content = card.querySelector('.reveal-content');
+                    if (content) {
+                        content.classList.add('translate-y-[120%]', 'opacity-0');
+                        content.classList.remove('translate-y-0', 'opacity-100');
+                    }
+                });
+            });
+
+
+            // 4. Header Background Change on Scroll
             const header = document.getElementById('main-header');
             window.addEventListener('scroll', () => {
                 if (window.scrollY > 50) {
