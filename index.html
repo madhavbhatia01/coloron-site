@@ -730,7 +730,7 @@
                     <div class="relative group">
                         <input
                             class="block py-4 px-0 w-full text-lg text-bg-dark bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-secondary peer"
-                            id="name" placeholder=" " required type="text" />
+                            id="name" name="name" placeholder=" " required type="text" autocomplete="name" />
                         <label for="name"
                             class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-secondary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your
                             Name</label>
@@ -739,7 +739,8 @@
                     <div class="relative group">
                         <input
                             class="block py-4 px-0 w-full text-lg text-bg-dark bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-secondary peer"
-                            id="phone" placeholder=" " required type="tel" pattern="[0-9+\s-]{8,15}" />
+                            id="phone" name="phone" placeholder=" " required type="tel" pattern="[0-9+\s-]{8,15}"
+                            autocomplete="tel" />
                         <label for="phone"
                             class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-secondary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone
                             Number</label>
@@ -749,7 +750,7 @@
                 <div class="relative group">
                     <textarea
                         class="block py-4 px-0 w-full text-lg text-bg-dark bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-secondary peer resize-none"
-                        id="message" placeholder=" " required rows="2"></textarea>
+                        id="message" name="message" placeholder=" " required rows="2" autocomplete="off"></textarea>
                     <label for="message"
                         class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-secondary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Tell
                         us about your project</label>
