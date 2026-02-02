@@ -182,10 +182,11 @@
     <section class="relative w-full h-screen min-h-[700px] flex items-center justify-center overflow-hidden" id="home">
         <div class="absolute inset-0 z-0">
             <div class="absolute inset-0 bg-black/50 z-10"></div>
-            <!-- Image 1 -->
-            <div class="hero-bg-image w-full h-full bg-cover bg-center" style="background-image: url('/assets/manufacturing-3.webp'); 
-                      filter: brightness(0.7) contrast(1.1); animation-delay: 0s;">
-            </div>
+            <!-- Image 1 - LCP Optimized with fetchpriority -->
+            <img src="/assets/manufacturing-3.webp" alt="Coloron Yarns Manufacturing Facility"
+                class="hero-bg-image w-full h-full object-cover object-center"
+                style="filter: brightness(0.7) contrast(1.1); animation-delay: 0s;" fetchpriority="high"
+                loading="eager" />
             <!-- Image 2 -->
             <div class="hero-bg-image w-full h-full bg-cover bg-center" style="background-image: url('/assets/manufacturing-2.webp');
                       filter: brightness(0.7) contrast(1.1); animation-delay: 4s;">
@@ -284,7 +285,7 @@
     <!-- Products Section -->
     <section class="relative w-full py-32 bg-primary text-text-light" id="products">
         <div class="absolute inset-0 opacity-20 mix-blend-overlay pointer-events-none"
-            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBuA8rtkJHe5P2F3SQy2QA7z8ZJhIQ_tf6zlvfPDx1yt9i0FYfnsKWMR7KQXmGYCMkWR4WnobfWELBJ1f_kKJ5ujR7Hp3AQBWQOJB9khpAZ6AFUWHsEpXb5_rH6tKEX_g8SoC47jGTuWwVJrK3V6gy4PDo0sL9sQ1SfTyO0aM4xQDEShW-iQt819JNqG9PX92eATbAEummC8pg9gwngUlRbxmOvkZe7lqQki_Itq5qA-z-d7DC35QOINQxLOA_C2XCOplOyY6hO_vQ'); background-size: cover; background-position: center;">
+            style="background-image: url('/assets/products-bg.webp'); background-size: cover; background-position: center;">
         </div>
         <div class="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12">
             <div
@@ -503,7 +504,7 @@
     <!-- Sustainability Section -->
     <section class="relative w-full py-40 bg-secondary text-white overflow-hidden" id="sustainability">
         <div class="absolute inset-0 mix-blend-multiply opacity-40"
-            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuByxz-SZ6bVLOeVqZFzq-4guLSpBn_5JfPfR2BXT_uEOvWR6ILYicVU8rvJQpBewYdN-qciOtaBx0ivgRk88zlfF61nxrAyABtOZdutG0smAOvowTizt8x9HesjN4PouA5gxuyW4KKZu4SLLiat79e-gunOPohfgXFnk9pGNZPOS0ytdkdzvREKEzkMf9SwfmXMsQ5HQMYOVZ98j9GWCYsIHimGgspmDSZYREDRVgw1PM9KQcgf1OdC5OlsehtGMmccIER8FgEjeXY'); background-size: cover; background-position: center; filter: grayscale(100%);">
+            style="background-image: url('/assets/sustainability-contact-bg.webp'); background-size: cover; background-position: center; filter: grayscale(100%);">
         </div>
         <div class="relative z-10 max-w-[1000px] mx-auto px-6 lg:px-12 text-center">
             <div
@@ -570,7 +571,7 @@
                             <div
                                 class="w-16 h-16 flex-shrink-0 overflow-hidden rounded-lg bg-gray-800 border border-white/10">
                                 <div class="w-full h-full bg-cover opacity-60 group-hover:opacity-100 transition-opacity grayscale"
-                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZGwHIR5ZMQBRQmNW2d7ot8oeTTjxgRXjf7ktZHZRnvkBy7ZsXgyycGIe0berFGNRO9iPjtX3nt1-kghPVdW1BX0Yi4BD_Kr5zXEDg05vK1mxyAuSf8b4upMhrihD7CjtneyxMvUR_-qz7Mxx9VF3Sn3AhpoAMcW4hkA1WvqYZKS1mfyqxzT1QhDt9G2uwSgQQhS5WvlT3YvXMerZq6YyEO4wA995yWRo_c1sVEKVcTKt4sD1B5NYdz4fCXtTvRb2Nxu4xGqFNcQc');">
+                                    style="background-image: url('/assets/expertise-1.webp');">
                                 </div>
                             </div>
                             <div>
@@ -585,7 +586,7 @@
                             <div
                                 class="w-16 h-16 flex-shrink-0 overflow-hidden rounded-lg bg-gray-800 border border-white/10">
                                 <div class="w-full h-full bg-cover opacity-60 group-hover:opacity-100 transition-opacity grayscale"
-                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDL4DDwkla_9M1A_j7klb1gKTK5V-_tYpaL0_17ZMwPPNvJWZbASA8FU4kmT2sYwFg2PfqCsuGSk2OK4cf1Uhu9bRwHuqDhCmx0F_97lCT5MJdgFG53iDGhySfHDeRqbo4C0d6_pbiLSdllSPFP3jXWQAvY3ZRloNfS1LfuuhSYLXQqVJ6uxHDWJVJXcBJLHMdZTlPvEt0m0C2DIO9SnEIY9vdDu_80EaoOPUNGRVXjC9ZrosudvUalI_iTQFKSx2YfbgO0Z1STk-M');">
+                                    style="background-image: url('/assets/expertise-2.webp');">
                                 </div>
                             </div>
                             <div>
@@ -600,7 +601,7 @@
                             <div
                                 class="w-16 h-16 flex-shrink-0 overflow-hidden rounded-lg bg-gray-800 border border-white/10">
                                 <div class="w-full h-full bg-cover opacity-60 group-hover:opacity-100 transition-opacity grayscale"
-                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDdzjGsW0YjF618UxeON4Ll7icen2ttBF_deTNiLOC7Q9SOClA1BA6DpSsMmX6Hs9vouXNzjMVGQnO0mOo2CkAjmB20CJ4h7yRsNW1TUJcST7Evp6vcCSzniPOWgHdcYlALlGP0xZS3nvYjDqgsPYPsgffFYt7LiJmkjLkQE4EXjDWZ9uc-VpWVsWcRo4Jxe8wXle1A7MH_bc5deHapoc40nVJZXktkcJ-JKYjZknhcBVxvdLGG4prsnz57BsMK9e1C-lf75of4upU');">
+                                    style="background-image: url('/assets/expertise-3.webp');">
                                 </div>
                             </div>
                             <div>
@@ -616,7 +617,7 @@
                 <div class="hidden lg:flex items-center justify-center relative reveal-on-scroll">
                     <div class="absolute w-[80%] h-[80%] border border-white/10 rotate-3"></div>
                     <div class="w-[70%] h-[90%] bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700 ease-in-out shadow-2xl"
-                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDdzjGsW0YjF618UxeON4Ll7icen2ttBF_deTNiLOC7Q9SOClA1BA6DpSsMmX6Hs9vouXNzjMVGQnO0mOo2CkAjmB20CJ4h7yRsNW1TUJcST7Evp6vcCSzniPOWgHdcYlALlGP0xZS3nvYjDqgsPYPsgffFYt7LiJmkjLkQE4EXjDWZ9uc-VpWVsWcRo4Jxe8wXle1A7MH_bc5deHapoc40nVJZXktkcJ-JKYjZknhcBVxvdLGG4prsnz57BsMK9e1C-lf75of4upU');">
+                        style="background-image: url('/assets/expertise-3.webp');">
                     </div>
                 </div>
             </div>
@@ -629,7 +630,7 @@
         <div class="absolute inset-0 z-0">
             <div class="absolute inset-0 bg-accent-indigo/90 mix-blend-multiply z-10"></div>
             <div class="w-full h-full bg-cover bg-fixed"
-                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZGwHIR5ZMQBRQmNW2d7ot8oeTTjxgRXjf7ktZHZRnvkBy7ZsXgyycGIe0berFGNRO9iPjtX3nt1-kghPVdW1BX0Yi4BD_Kr5zXEDg05vK1mxyAuSf8b4upMhrihD7CjtneyxMvUR_-qz7Mxx9VF3Sn3AhpoAMcW4hkA1WvqYZKS1mfyqxzT1QhDt9G2uwSgQQhS5WvlT3YvXMerZq6YyEO4wA995yWRo_c1sVEKVcTKt4sD1B5NYdz4fCXtTvRb2Nxu4xGqFNcQc'); filter: grayscale(50%) contrast(1.2);">
+                style="background-image: url('/assets/expertise-1.webp'); filter: grayscale(50%) contrast(1.2);">
             </div>
         </div>
         <div class="relative z-20 max-w-[1600px] mx-auto px-6 lg:px-12 w-full">
@@ -641,7 +642,7 @@
                 <!-- Item 1 -->
                 <div class="group cursor-pointer relative aspect-[3/4] overflow-hidden bg-bg-dark">
                     <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110 opacity-60 group-hover:opacity-80"
-                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDdzjGsW0YjF618UxeON4Ll7icen2ttBF_deTNiLOC7Q9SOClA1BA6DpSsMmX6Hs9vouXNzjMVGQnO0mOo2CkAjmB20CJ4h7yRsNW1TUJcST7Evp6vcCSzniPOWgHdcYlALlGP0xZS3nvYjDqgsPYPsgffFYt7LiJmkjLkQE4EXjDWZ9uc-VpWVsWcRo4Jxe8wXle1A7MH_bc5deHapoc40nVJZXktkcJ-JKYjZknhcBVxvdLGG4prsnz57BsMK9e1C-lf75of4upU');">
+                        style="background-image: url('/assets/expertise-3.webp');">
                     </div>
                     <div class="absolute inset-0 p-8 flex flex-col justify-between z-10">
                         <span class="text-xs font-bold text-white/50 tracking-widest">01</span>
@@ -658,7 +659,7 @@
                 <!-- Item 2 -->
                 <div class="group cursor-pointer relative aspect-[3/4] overflow-hidden bg-bg-dark">
                     <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110 opacity-60 group-hover:opacity-80"
-                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZGwHIR5ZMQBRQmNW2d7ot8oeTTjxgRXjf7ktZHZRnvkBy7ZsXgyycGIe0berFGNRO9iPjtX3nt1-kghPVdW1BX0Yi4BD_Kr5zXEDg05vK1mxyAuSf8b4upMhrihD7CjtneyxMvUR_-qz7Mxx9VF3Sn3AhpoAMcW4hkA1WvqYZKS1mfyqxzT1QhDt9G2uwSgQQhS5WvlT3YvXMerZq6YyEO4wA995yWRo_c1sVEKVcTKt4sD1B5NYdz4fCXtTvRb2Nxu4xGqFNcQc');">
+                        style="background-image: url('/assets/expertise-1.webp');">
                     </div>
                     <div class="absolute inset-0 p-8 flex flex-col justify-between z-10">
                         <span class="text-xs font-bold text-white/50 tracking-widest">02</span>
@@ -675,7 +676,7 @@
                 <!-- Item 3 -->
                 <div class="group cursor-pointer relative aspect-[3/4] overflow-hidden bg-bg-dark">
                     <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110 opacity-60 group-hover:opacity-80"
-                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDL4DDwkla_9M1A_j7klb1gKTK5V-_tYpaL0_17ZMwPPNvJWZbASA8FU4kmT2sYwFg2PfqCsuGSk2OK4cf1Uhu9bRwHuqDhCmx0F_97lCT5MJdgFG53iDGhySfHDeRqbo4C0d6_pbiLSdllSPFP3jXWQAvY3ZRloNfS1LfuuhSYLXQqVJ6uxHDWJVJXcBJLHMdZTlPvEt0m0C2DIO9SnEIY9vdDu_80EaoOPUNGRVXjC9ZrosudvUalI_iTQFKSx2YfbgO0Z1STk-M');">
+                        style="background-image: url('/assets/expertise-2.webp');">
                     </div>
                     <div class="absolute inset-0 p-8 flex flex-col justify-between z-10">
                         <span class="text-xs font-bold text-white/50 tracking-widest">03</span>
@@ -692,7 +693,7 @@
                 <!-- Item 4 -->
                 <div class="group cursor-pointer relative aspect-[3/4] overflow-hidden bg-bg-dark">
                     <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110 opacity-60 group-hover:opacity-80"
-                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCsurMI08isabRG4BvtgEwM47MmipdqNxoFEfM8ICmFOvwu7IiLSrMi1piwX2kjmaTDK0XXGZlIPeT_oj_x2PEHPZHd7FW7JnOcapp2gJwcew1NfVLEe1g--tljg0eIXSdc_nHE63S02ogr89xp6KKw5u-Ai4FFpbhMzL36ToZtVpa5Vp7EpDZlHcJqp5DUj05_ZtZIXUzPlBhjoB3HVU4jcufO905f-9MQ4py7kNROb1fnNXDTiOusSGnJXSmwvRYb8yZ6sBYSMys');">
+                        style="background-image: url('/assets/expertise-4.webp');">
                     </div>
                     <div class="absolute inset-0 p-8 flex flex-col justify-between z-10">
                         <span class="text-xs font-bold text-white/50 tracking-widest">04</span>
@@ -713,7 +714,7 @@
     <!-- Contact Section -->
     <section class="relative w-full py-40 bg-warm-grey text-bg-dark" id="contact">
         <div class="absolute inset-0 opacity-20"
-            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuByxz-SZ6bVLOeVqZFzq-4guLSpBn_5JfPfR2BXT_uEOvWR6ILYicVU8rvJQpBewYdN-qciOtaBx0ivgRk88zlfF61nxrAyABtOZdutG0smAOvowTizt8x9HesjN4PouA5gxuyW4KKZu4SLLiat79e-gunOPohfgXFnk9pGNZPOS0ytdkdzvREKEzkMf9SwfmXMsQ5HQMYOVZ98j9GWCYsIHimGgspmDSZYREDRVgw1PM9KQcgf1OdC5OlsehtGMmccIER8FgEjeXY'); background-size: cover;">
+            style="background-image: url('/assets/sustainability-contact-bg.webp'); background-size: cover;">
         </div>
         <div
             class="relative z-10 max-w-[1000px] mx-auto px-6 lg:px-12 bg-white/90 backdrop-blur-xl p-12 lg:p-20 shadow-2xl rounded-sm border border-white reveal-on-scroll">
